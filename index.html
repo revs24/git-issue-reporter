@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Github API</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="thirdparty/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="thirdparty/js/jquery.min.js"></script>
+        <script type="text/javascript" src="thirdparty/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="alert"></div>
+        <div class="container">
+            <form action="#">
+                <div class="form-group"> 
+                    <label for="repo_url">URL:</label>
+                    <input type="text" id="repo_url" class="form-control" placeholder="Enter github repo url">
+                </div>
+                <button type="submit" class="btn btn-primary pull-right" id="url_form_btn">Submit</button>
+            </form>
+            <div class="issue-table">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Range</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total </td>
+                            <td id="total_issues"></td>
+                        </tr>
+                        <tr>
+                            <td>Last 24 Hours </td>
+                            <td id="last_24_hours_issues"></td>
+                        </tr>
+                        <tr>
+                            <td>Between last 2nd to 7th days</td>
+                            <td id="between_7_days_and_24_hours_issues"></td>
+                        </tr>
+                        <tr>
+                            <td>Before 7 days</td>
+                            <td id="before_7_days_issues"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="loader"><span class="spin-wrap"></span></div>
+        </div>
+    </body>
+</html>

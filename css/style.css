@@ -1,0 +1,32 @@
+.issue-table {
+    width: 70%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    display: none;
+}
+.alert {
+    text-align: center;
+}
+
+.loader {
+  background: rgba(54, 54, 54, .5);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1100;
+}
+
+.spin-wrap {
+  background: url('/images/loader-icon.gif') center no-repeat #fff;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+  position: fixed;
+  top: 50%;
+}
